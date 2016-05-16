@@ -1,30 +1,35 @@
-
-$(document).ready(function(){
-    function HexTime(){
+$(document).ready(function () {
+    function HexTime() {
         var date = new Date();
         var hours = date.getHours() + Math.floor((Math.random() * 100) + 1);
         var minutes = date.getMinutes() + Math.floor((Math.random() * 100) + 1);
         var seconds = date.getSeconds() + Math.floor((Math.random() * 100) + 1);
-        var arr = [hours, minutes, seconds].map(function(num){
+        var arr = [hours, minutes, seconds].map(function (num) {
             //pad the numbers and make them strings
-            return num < 10 ? '0' + num: String(num);
+            return num < 10 ? '0' + num : String(num);
         });
         //make it into hex
         document.getElementById('about').style.color = '#' + arr[0] + arr[1] + arr[2];
     }
+
+    //update the color every 1,000 miliseconds
     setInterval(HexTime(), 1000);
+
+    //show/hide the sliders
     $("#title").click(function () {
         $("wrapper").slideDown(500);
     });
     $("#title").click(function () {
         $("wrapper").slideUp(500);
     });
+    //reset the sliders
     $("#reset").click(function () {
         $('slider1').slider.value(33);
 
         $('slider2').slider.value(33);
 
         $('slider3').slider.value(33);
+    });
 });
 
 
@@ -32,12 +37,14 @@ $(function () {
     $('.title').click(function () {
         $(this).toggleClass('active').next().children('.content').toggleClass('show');
     });
-});
+    });
+
+//initiate sliders
 $("#slider1").slider({
     ticks: [0, 25, 50, 75, 100],
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
     ticks_snap_bounds: 2
-});
+    });
 $("#slider2").slider({
     ticks: [0, 25, 50, 75, 100],
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
@@ -97,17 +104,17 @@ var split = function () {
                 } else {
                     $(sliderother2).slider('value', valueother2 - valuechange);
                 }
-            } else {
+                } else {
                 if (valuechange <= 0) {
                     $(sliderother1).slider('value', valueother1 - (valuechange / 2));
                     $(sliderother2).slider('value', valueother2 - (valuechange / 2));
                 } else {
                     $(sliderother1).slider('value', valueother1 - valuechange);
                 }
-            }
-        } else {
+                }
+            } else {
             $(sliderother1).slider('value', valueother1 - (valuechange / 2));
             $(sliderother2).slider('value', valueother2 - (valuechange / 2));
+            }
         }
-    }
 };
