@@ -64,7 +64,7 @@ var split = function () {
 
     });
 
-    function refreshSliders(slidermainin) {
+/*    function refreshSliders(slidermainin) {
         var value1 = $("#slider_1").slider("option", "value");
         var value2 = $("#slider_2").slider("option", "value");
         var value3 = $("#slider_3").slider("option", "value");
@@ -118,5 +118,5 @@ var split = function () {
             $(sliderother1).slider('value', valueother1 - (valuechange / 2));
             $(sliderother2).slider('value', valueother2 - (valuechange / 2));
             }
-        }
+        }*/
 };
