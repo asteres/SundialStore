@@ -597,24 +597,15 @@ fieldset[disabled] .btn-danger.active {
         position: relative;
     }
 
-.title:hover {
+.click:hover {
     cursor: pointer;
 }
 
-.content {
-    transition: transform .5s;
-    transform: translateY(-100%);
-}
-
-.content.show {
-    transform: translateY(0);
-}
-
-.wrapper {
+.hide {
     overflow: hidden;
 }
 
-.title:before {
+.click:before {
     content: '';
     display: inline-block;
     position: relative;
@@ -623,13 +614,10 @@ fieldset[disabled] .btn-danger.active {
     border-left-color: #000;
 }
 
-.title.active:before {
+.click.active:before {
     left: 0;
     top: 3px;
     border-color: #000 transparent transparent;
 }
 
-.title:hover {
-    cursor: pointer;
-}
 /*# sourceMappingURL=bootstrap-theme.css.map */
