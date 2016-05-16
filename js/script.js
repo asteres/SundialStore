@@ -23,15 +23,15 @@ $(function () {
 $("#slider1").slider({
     ticks: [0, 25, 50, 75, 100],
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
-    ticks_snap_bounds: 30
+    ticks_snap_bounds: 2
 });
 $("#slider2").slider({
     ticks: [0, 25, 50, 75, 100],
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
-    ticks_snap_bounds: 30
+    ticks_snap_bounds: 2
 });
 $("#slider3").slider({
     ticks: [0, 25, 50, 75, 100],
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
-    ticks_snap_bounds: 30
+    ticks_snap_bounds: 2
 });
