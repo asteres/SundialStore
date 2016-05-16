@@ -10,7 +10,7 @@ $(document).ready(function(){
             return num < 10 ? '0' + num: String(num);
         });
         //make it into hex
-        document.getElementById('about').style.color = '#' + arr[0] + arr[1] + ar[2];
+        document.getElementById('about').style.color = '#' + arr[0] + arr[1] + arr[2];
     }
     setInterval(HexTime(), 1000);
 });
