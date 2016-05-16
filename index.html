@@ -60,7 +60,7 @@
     <h3 class="text-center"><b>Supporting:</b> CSUN Journalism Department</h3>
     <h1 id="stats">Statistics</h1>
 
-    <form-horizontal>
+    <form class="form-horizontal">
   <fieldset>
     <legend id="buy">Purchase the Sundial Bundle</legend>
       <div class="control-group">
@@ -71,17 +71,17 @@
               <input type="radio" name="optionsRadios" id="twenty" value="option1">
   $20
 </label>
-<label class="radio radio-inline">
+          <label for="thirtyfive" class="radio radio-inline">
   <input type="radio" name="optionsRadios" id="thirtyfive" value="option2" checked>
   $35
 </label>
-          <label class="radio radio-inline">
+          <label for="fifty" class="radio radio-inline">
             <input type="radio" name="optionsRadios" id="fifty" value="option2">
   $50
 </label>
-          <label class="radio radio-inline control-label">
+          <label for="optionsRadios2" class="radio radio-inline control-label">
           </label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
   Other
           <input step="0.01" min="0" max="999999.99" id="amount-custom" class="button target-amount"
                  placeholder="Custom" type="number">
@@ -98,6 +98,8 @@
                                                                  data-slider-ticks="[0, 25, 50, 75, 100]"
                                                                  data-slider-ticks-snap-bounds="2"
                                                                  data-slider-tooltip="hide"
+                                                                 data-slider-min="0"
+                                                                 data-slider-max="100"
                                                                  data-slider-ticks-labels='["0%", "25%", "50%", "75%", "100%"]'/>
                   </div>
               </div>
@@ -108,6 +110,8 @@
                                                                      data-slider-ticks="[0, 25, 50, 75, 100]"
                                                                      data-slider-ticks-snap-bounds="2"
                                                                      data-slider-tooltip="hide"
+                                                                     data-slider-min="0"
+                                                                     data-slider-max="100"
                                                                      data-slider-ticks-labels='["0%", "25%", "50%", "75%", "100%"]'/>
                   </div>
               </div>
@@ -118,6 +122,9 @@
                                                                             data-slider-ticks="[0, 25, 50, 75, 100]"
                                                                             data-slider-ticks-snap-bounds="2"
                                                                             data-slider-tooltip="hide"
+
+                                                                            data-slider-min="0"
+                                                                            data-slider-max="100"
                                                                             data-slider-ticks-labels='["0%", "25%", "50%", "75%", "100%"]'/>
                   </div>
               </div>

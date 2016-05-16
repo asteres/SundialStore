@@ -38,5 +38,63 @@ $("#slider3").slider({
 
 var split = function () {
     var max = 100;
+    $("#slider1").on("slide", function (slideEvt) {
 
+    });
+
+    function refreshSliders(slidermainin) {
+        var value1 = $("#slider_1").slider("option", "value");
+        var value2 = $("#slider_2").slider("option", "value");
+        var value3 = $("#slider_3").slider("option", "value");
+        var valuechange = (value1 + value2 + value3) - 100;
+        var valuemain = 0, valueother1 = 0, valueother2 = 0;
+
+        switch (slidermainin) {
+            case 1:
+                slidermain = "#slider_1";
+                sliderother1 = "#slider_2";
+                sliderother2 = "#slider_3";
+                valuemain = value1;
+                valueother1 = value2;
+                valueother2 = value3;
+                break;
+            case 2:
+                slidermain = "#slider_2";
+                sliderother1 = "#slider_1";
+                sliderother2 = "#slider_3";
+                valuemain = value2;
+                valueother1 = value1;
+                valueother2 = value3;
+                break;
+            case 3:
+                slidermain = "#slider_3";
+                sliderother1 = "#slider_1";
+                sliderother2 = "#slider_2";
+                valuemain = value3;
+                valueother1 = value1;
+                valueother2 = value2;
+                break;
+        }
+
+        if (valueother1 === 0 || valueother2 === 0) {
+            if (valueother1 === 0) {
+                if (valuechange <= 0) {
+                    $(sliderother1).slider('value', valueother1 - (valuechange / 2));
+                    $(sliderother2).slider('value', valueother2 - (valuechange / 2));
+                } else {
+                    $(sliderother2).slider('value', valueother2 - valuechange);
+                }
+            } else {
+                if (valuechange <= 0) {
+                    $(sliderother1).slider('value', valueother1 - (valuechange / 2));
+                    $(sliderother2).slider('value', valueother2 - (valuechange / 2));
+                } else {
+                    $(sliderother1).slider('value', valueother1 - valuechange);
+                }
+            }
+        } else {
+            $(sliderother1).slider('value', valueother1 - (valuechange / 2));
+            $(sliderother2).slider('value', valueother2 - (valuechange / 2));
+        }
+    }
 };
