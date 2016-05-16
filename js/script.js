@@ -33,13 +33,13 @@ $(document).ready(function () {
 });
 
 
-/*
+
 $(function () {
     $('.title').click(function () {
         $(this).toggleClass('active').next().children('.content').toggleClass('show');
     });
     });
- */
+
 
 //initiate sliders
 $("#slider1").slider({
@@ -57,14 +57,14 @@ $("#slider3").slider({
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
     ticks_snap_bounds: 2
 });
-
+/*
 var split = function () {
     var max = 100;
     $("#slider1").on("slide", function (slideEvt) {
 
     });
 
-/*    function refreshSliders(slidermainin) {
+    function refreshSliders(slidermainin) {
         var value1 = $("#slider_1").slider("option", "value");
         var value2 = $("#slider_2").slider("option", "value");
         var value3 = $("#slider_3").slider("option", "value");
