@@ -36,6 +36,14 @@ $("#slider3").slider({
     ticks_snap_bounds: 2
 });
 
+function reset() {
+    $('slider1').slider.value(33)
+}
+$('slider2').slider.value(33)
+}
+$('slider3').slider.value(33)
+}
+
 var split = function () {
     var max = 100;
     $("#slider1").on("slide", function (slideEvt) {
