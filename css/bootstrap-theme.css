@@ -601,7 +601,7 @@ fieldset[disabled] .btn-danger.active {
     cursor: pointer;
 }
 
-.hide {
+.content {
     overflow: hidden;
 }
 

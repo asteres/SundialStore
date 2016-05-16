@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 //show/hide the sliders
     $('.click').click(function () {
-        $('.hide').slideToggle(500);
+        $('.content').slideToggle(500);
     });
 */
 //initiate sliders
