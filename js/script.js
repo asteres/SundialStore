@@ -1,9 +1,5 @@
 
 $(document).ready(function(){
-
-    /**
-     * @return {number}
-     */
     function HexTime(){
         var date = new Date();
         var hours = date.getHours();
@@ -16,6 +12,5 @@ $(document).ready(function(){
         //make it into hex
         document.getElementById('about').style.color = '#' + arr[0] + arr[1] + ar[2];
     }
+    setInterval(HexTime(), 1000);
 });
-
-setInterval(HexTime(), 1000);
