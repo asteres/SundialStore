@@ -18,13 +18,13 @@ $(document).ready(function () {
     $('.content').hide();
 
     //reset the sliders
-    $('.reset').click(function () {
+    function slidere() {
         $('slider1').slider.value(33);
 
         $('slider2').slider.value(33);
 
         $('slider3').slider.value(33);
-    });
+    };
 });
 
 
