@@ -33,12 +33,12 @@ $(document).ready(function () {
         $(this).toggleClass('active').next().children('.content').toggleClass('show');
     });
     });
-
+*/
 //show/hide the sliders
     $('.click').click(function () {
         $('.content').slideToggle(500);
     });
-*/
+
 //initiate sliders
 $("#slider1").slider({
     ticks: [0, 25, 50, 75, 100],
