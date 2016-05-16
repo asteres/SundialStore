@@ -56,7 +56,8 @@ $("#slider3").slider({
     ticks: [0, 25, 50, 75, 100],
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
     ticks_snap_bounds: 2
-});
+})
+
 /*
 var split = function () {
     var max = 100;
