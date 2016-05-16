@@ -7,5 +7,5 @@ $(document).ready(function(){
         //hide show
     $('.box:first').hide(500).delay(300).show(800);
     //slideup
-    $('.box:first').slideUp(500).show(500);
+    $('.box:first').slideUp(500).slideDown(500);
 });
