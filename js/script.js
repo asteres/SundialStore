@@ -25,3 +25,13 @@ $("#slider1").slider({
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
     ticks_snap_bounds: 30
 });
+$("#slider2").slider({
+    ticks: [0, 25, 50, 75, 100],
+    ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
+    ticks_snap_bounds: 30
+});
+$("#slider3").slider({
+    ticks: [0, 25, 50, 75, 100],
+    ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
+    ticks_snap_bounds: 30
+});
