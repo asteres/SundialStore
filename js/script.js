@@ -16,10 +16,10 @@ $(document).ready(function () {
     setInterval(HexTime(), 1000);
 
     //show/hide the sliders
-    $("#title").click(function () {
+    ("#title").click(function () {
         $("#wrapper").slideDown(500);
     });
-    $("#title").click(function () {
+    ("#title").click(function () {
         $("#wrapper").slideUp(500);
     });
     //reset the sliders
