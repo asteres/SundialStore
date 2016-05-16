@@ -13,7 +13,14 @@ $(document).ready(function(){
         document.getElementById('about').style.color = '#' + arr[0] + arr[1] + arr[2];
     }
     setInterval(HexTime(), 1000);
+    $("#title").click(function () {
+        $("wrapper").slideDown(500);
+    });
+    $("#title").click(function () {
+        $("wrapper").slideUp(500);
+    });
 });
+
 
 $(function () {
     $('.title').click(function () {
