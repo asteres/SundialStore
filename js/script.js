@@ -44,10 +44,10 @@ $("#slider3").slider({
 });
 
 function reset() {
-    $('slider1').slider.value(33)
-}
-$('slider2').slider.value(33)
-}
+    $('slider1').slider.value(33);
+
+    $('slider2').slider.value(33);
+
 $('slider3').slider.value(33)
 }
 
