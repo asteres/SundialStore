@@ -17,10 +17,10 @@ $(document).ready(function () {
 
     //show/hide the sliders
     $("#title").click(function () {
-        $("wrapper").slideDown(500);
+        $("#wrapper").slideDown(500);
     });
     $("#title").click(function () {
-        $("wrapper").slideUp(500);
+        $("#wrapper").slideUp(500);
     });
     //reset the sliders
     $("#reset").click(function () {
