@@ -18,7 +18,7 @@ $(document).ready(function () {
     $('.content').hide(200);
 
     //reset the sliders
-    $("#reset").click(function () {
+    $(".reset").click(function () {
         $('slider1').slider.value(33);
 
         $('slider2').slider.value(33);
