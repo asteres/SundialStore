@@ -28,17 +28,8 @@ $(document).ready(function () {
 
  //show/hide the sliders
     $("#click").click(function () {
-        $("#hide").slideDown(500);
+        $("#hide").slideToggle(500);
     });
-    $("#click").click(function () {
-        $("#hide").slideUp(500);
-    });
-$(function () {
-    $('.click').click(function () {
-        $(this).toggleClass('active').next().children('.hide').toggleClass('show');
-    });
-    });
-
 
 //initiate sliders
 $("#slider1").slider({
