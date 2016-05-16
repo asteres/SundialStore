@@ -20,3 +20,8 @@ $(function () {
         $(this).toggleClass('active').next().children('.content').toggleClass('show');
     });
 });
+$("#slider1").slider({
+    ticks: [0, 25, 50, 75, 100],
+    ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
+    ticks_snap_bounds: 30
+});
