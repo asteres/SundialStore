@@ -15,10 +15,6 @@ $(document).ready(function () {
     //update the color every 1,000 miliseconds
     setInterval(HexTime(), 1000);
 
-    //show/hide the sliders
-    $("#title").click(function () {
-        $("#wrapper").slideToggle(500);
-    });
     //reset the sliders
     $("#reset").click(function () {
         $('slider1').slider.value(33);
@@ -30,7 +26,10 @@ $(document).ready(function () {
 });
 
 
-
+ //show/hide the sliders
+    $("#click").click(function () {
+        $("#hide").slideToggle(500);
+    });
 
 /*$(function () {
     $('.title').click(function () {
