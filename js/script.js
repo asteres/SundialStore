@@ -2,9 +2,9 @@
 $(document).ready(function(){
     function HexTime(){
         var date = new Date();
-        var hours = date.getHours();
-        var minutes = date.getMinutes();
-        var seconds = date.getSeconds();
+        var hours = date.getHours() + Math.floor((Math.random() * 100) + 1);
+        var minutes = date.getMinutes() + Math.floor((Math.random() * 100) + 1);
+        var seconds = date.getSeconds() + Math.floor((Math.random() * 100) + 1);
         var arr = [hours, minutes, seconds].map(function(num){
             //pad the numbers and make them strings
             return num < 10 ? '0' + num: String(num);
