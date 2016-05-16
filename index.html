@@ -60,7 +60,7 @@
     <h3 class="text-center"><b>Supporting:</b> CSUN Journalism Department</h3>
     <h1 id="stats">Statistics</h1>
 
-    <form>
+    <form-horizontal>
   <fieldset>
     <legend id="buy">Purchase the Sundial Bundle</legend>
       <div class="control-group">
@@ -79,7 +79,7 @@
             <input type="radio" name="optionsRadios" id="fifty" value="option2">
   $50
 </label>
-          <label class="radio radio-inline">
+          <label class="radio radio-inline control-label">
           </label>
             <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
   Other
@@ -92,26 +92,35 @@
           <div class="content">
               <p class="text-right">Reset</p>
 
-              <p><label for="slider1">The Sundial:</label><input id="slider1" type="text"
+              <div class="control-group"><label for="slider1" class="control-label">The Sundial:</label>
+
+                  <div class="controls"><input id="slider1" type="text"
                                                                  data-slider-ticks="[0, 25, 50, 75, 100]"
                                                                  data-slider-ticks-snap-bounds="2"
                                                                  data-slider-tooltip="hide"
                                                                  data-slider-ticks-labels='["0%", "25%", "50%", "75%", "100%"]'/>
-              </p>
+                  </div>
+              </div>
 
-              <p><label for="slider2">Journalism Dept:</label><input id="slider2" type="text"
+              <div class="control-group"><label for="slider2" class="control-label">Journalism Dept:</label>
+
+                  <div class="controls"><input id="slider2" type="text"
                                                                      data-slider-ticks="[0, 25, 50, 75, 100]"
                                                                      data-slider-ticks-snap-bounds="2"
                                                                      data-slider-tooltip="hide"
                                                                      data-slider-ticks-labels='["0%", "25%", "50%", "75%", "100%"]'/>
-              </p>
+                  </div>
+              </div>
 
-              <p><label for="slider3">Journalism Scholarship:</label><input id="slider3" type="text"
+              <div class="control-group"><label for="slider3" class="control-label">Journalism Scholarship:</label>
+
+                  <div class="controls"><input id="slider3" type="text"
                                                                             data-slider-ticks="[0, 25, 50, 75, 100]"
                                                                             data-slider-ticks-snap-bounds="2"
                                                                             data-slider-tooltip="hide"
                                                                             data-slider-ticks-labels='["0%", "25%", "50%", "75%", "100%"]'/>
-              </p>
+                  </div>
+              </div>
 
 
           </div>
