@@ -16,11 +16,8 @@ $(document).ready(function () {
     setInterval(HexTime(), 1000);
 
     //show/hide the sliders
-    ("#title").click(function () {
-        $("#wrapper").slideDown(500);
-    });
-    ("#title").click(function () {
-        $("#wrapper").slideUp(500);
+    $("#title").click(function () {
+        $("#wrapper").slideToggle(500);
     });
     //reset the sliders
     $("#reset").click(function () {
@@ -34,13 +31,12 @@ $(document).ready(function () {
 
 
 
-/*
+
 $(function () {
     $('.title').click(function () {
         $(this).toggleClass('active').next().children('.content').toggleClass('show');
     });
     });
-*/
 
 
 //initiate sliders
