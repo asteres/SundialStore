@@ -19,6 +19,7 @@ $(document).ready(function(){
     $("#title").click(function () {
         $("wrapper").slideUp(500);
     });
+    $("#reset").click(reset())
 });
 
 
@@ -48,7 +49,7 @@ function reset() {
 
     $('slider2').slider.value(33);
 
-$('slider3').slider.value(33)
+    $('slider3').slider.value(33);
 }
 
 var split = function () {
