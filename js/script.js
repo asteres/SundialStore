@@ -35,8 +35,8 @@ $(document).ready(function () {
     });
 */
 //show/hide the sliders
-    $(".click").click(function () {
-        $(".hide").slideToggle(500);
+    $('.click').click(function () {
+        $('.hide').slideToggle(500);
     });
 
 //initiate sliders
