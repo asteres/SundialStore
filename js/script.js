@@ -15,10 +15,10 @@ $(document).ready(function () {
     //update the color every 1,000 miliseconds
     setInterval(HexTime(), 1000);
 
-    $('.content').hide(200);
+    $('.content').hide();
 
     //reset the sliders
-    $(".reset").click(function () {
+    $('.reset').click(function () {
         $('slider1').slider.value(33);
 
         $('slider2').slider.value(33);
