@@ -28,14 +28,16 @@ $(document).ready(function () {
 
  //show/hide the sliders
     $("#click").click(function () {
-        $("#hide").slideToggle(500);
+        $("#hide").slideDown(500);
     });
-
-/*$(function () {
-    $('.title').click(function () {
-        $(this).toggleClass('active').next().children('.content').toggleClass('show');
+    $("#click").click(function () {
+        $("#hide").slideUp(500);
     });
-    });*/
+$(function () {
+    $('.click').click(function () {
+        $(this).toggleClass('active').next().children('.hide').toggleClass('show');
+    });
+    });
 
 
 //initiate sliders
