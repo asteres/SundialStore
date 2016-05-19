@@ -30,6 +30,7 @@ $(document).ready(function () {
                 display.textContent = min + ":" + sec + ":" + mili;
             }
             timer();
+            setInterval(timer, 1000);
         }
         window.onload = function () {
             var threedays = 4320,
