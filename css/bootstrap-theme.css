@@ -616,10 +616,10 @@ fieldset[disabled] .btn-danger.active {
     border: 6px solid transparent;
     border-left-color: #000;
 }
-/*#amount-custom{
+#amount-custom{
   overflow: hidden;
   display: none;
-}*/
+}
 
 .click.active:before {
     left: 0;
