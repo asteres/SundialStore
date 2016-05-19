@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //color based on time
     function HexTime() {
         var date = new Date();
         var hours = date.getHours() + Math.floor((Math.random() * 100) + 1);
@@ -15,6 +16,7 @@ $(document).ready(function () {
     //update the color every 1,000 miliseconds
     setInterval(HexTime(), 1000);
 
+    //timer
     function startTime(duration, display) {
                 var start = Date.now(),
                 min,
@@ -50,6 +52,10 @@ $(document).ready(function () {
         
         return false;
     });
+    
+    if(document.getElementById('optionsRadios').checked) {
+        $('.amount-custom').show(500).focus();
+    }
 });
 
 //show/hide the sliders
