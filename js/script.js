@@ -35,8 +35,8 @@ $(document).ready(function () {
             setInterval(timer, 1000);
         }
         window.onload = function () {
-            var threedays = 4320,
-            display = document.querySelector('#time');
+            var threedays = 6 * 5,
+                display = document.querySelector('#time');
             startTime(threedays,display);
         };
 
