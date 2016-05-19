@@ -52,9 +52,11 @@ $(document).ready(function () {
         
         return false;
     });
-    
+
+    //show and select textbox if other is selected
     if(document.getElementById('optionsRadios').checked) {
-        $('#amount-custom').show(500).focus();
+        $('#amount-custom').slideToggle(500);
+        //.focus
     }
 });
 
