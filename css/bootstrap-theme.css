@@ -616,7 +616,7 @@ fieldset[disabled] .btn-danger.active {
     border: 6px solid transparent;
     border-left-color: #000;
 }
-.amount-custom{
+#amount-custom{
   display: none;
 }
 

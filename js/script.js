@@ -54,7 +54,7 @@ $(document).ready(function () {
     });
     
     if(document.getElementById('optionsRadios').checked) {
-        $('.amount-custom').show(500).focus();
+        $('#amount-custom').show(500).focus();
     }
 });
 
