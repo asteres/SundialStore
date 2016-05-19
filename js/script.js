@@ -44,11 +44,11 @@ $(document).ready(function () {
 
     //reset the sliders
     $('.reset').click(function () {
-        $('slider1').slider.getValue(33);
+        $('slider1').slider.('setValue', 33);
 
-        $('slider2').slider.getValue(33);
+        $('slider2').slider.('setValue', 33);
 
-        $('slider3').slider.getValue(33);
+        $('slider3').slider.('setValue', 33);
         
         return false;
     });
