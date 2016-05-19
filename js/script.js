@@ -33,7 +33,7 @@ $(document).ready(function () {
         window.onload = function () {
             var threedays = 4320,
             display = document.querySelector('#time');
-            startTimer(threedays,display);
+            startTime(threedays,display);
         };
     }
 

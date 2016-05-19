@@ -32,19 +32,21 @@ limitations under the License.
 			if(!(settings.sliders))
 				settings.sliders = $(this);
 
-			var addUp = function(list) {
-				list.each(function() {
-					var reading = parseFloat($(this).val());
-					if(!isNaN(reading)) {
+			var addUp;
+			addUp = function (list) {
+				list.each(function () {
+					var reading;
+					reading = parseFloat($(this).val());
+					if (!isNaN(reading)) {
 						sum += reading;
 					}
 				});
 				return sum;
-			}
+			};
 
 			var makeField = function(type, classes) {
 				return $("<" + type + ">").addClass(classes.join(" "));
-			}
+			};
 
 			var lock_selector = DEFAULT_LOCK_CLASS;
 			if(settings.lock === true) {
