@@ -81,7 +81,6 @@ limitations under the License.
 				var sum_locked = 0;
 				// to do locks, use this strategy... remove from sum, remove from $fields.
 				settings.sliders.each(function() {
-					// TODO: identify locks somehomw.
 					if($(this).find("input[type='checkbox']" + lock_selector + ":checked").length > 0) {
 						// we're locked.
 						$iter = $iter.not($(this).find(settings.field));
