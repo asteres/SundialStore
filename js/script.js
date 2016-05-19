@@ -53,9 +53,11 @@ $(document).ready(function () {
         return false;
     });
 
-    //show textbox when other is selected and focus the textbox
     $('#options').click(function() {
-  $('#amount-custom')[this.checked ? "show focus" : "hide"]();
+  $('#amount-custom')[this.checked ? "show" : "hide"]();
+});
+        $('#options').click(function() {
+  $('#amount-custom')[this.checked ? "focus" : ""]();
 });
 
 });
