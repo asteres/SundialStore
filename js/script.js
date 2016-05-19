@@ -55,7 +55,7 @@ $(document).ready(function () {
 
     //show textbox when other is selected and focus the textbox
     $('#options').click(function() {
-  $('#amount-custom').slideToggle(500);
+  $('#amount-custom')[this.checked ? "show focus" : "hide"]();
 });
 
 });
