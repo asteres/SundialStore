@@ -24,7 +24,7 @@ $(document).ready(function () {
                 //find time elapsed ( | truncates to int)
                 diff = duration - (((Date.now() - start)/1000)|0);
                 min = (diff / 60) | 0;
-                sec = (diff / 60) | 0;
+                sec = (diff % 60) | 0;
 
                 min = min < 10 ? "0" + min : min;
                 sec = sec < 10 ? "0" + sec : sec;
