@@ -43,7 +43,7 @@ $(document).ready(function () {
         };
 
     //reset the sliders
-    $('#reset').click(function () {
+    $('.reset').click(function () {
         $('slider1').slider.value(33);
 
         $('slider2').slider.value(33);
@@ -53,11 +53,6 @@ $(document).ready(function () {
         return false;
     });
 
-    //show and select textbox if other is selected
-    if(document.getElementById('optionsRadios').checked) {
-        $('#amount-custom').slideToggle(500);
-        //.focus
-    }
     $('#options').click(function() {
   $('#amount-custom')[this.checked ? "show" : "hide"]();
 });
