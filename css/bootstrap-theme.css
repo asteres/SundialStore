@@ -617,6 +617,7 @@ fieldset[disabled] .btn-danger.active {
     border-left-color: #000;
 }
 #amount-custom{
+  overflow: hidden;
   display: none;
 }
 
