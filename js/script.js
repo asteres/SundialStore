@@ -10,24 +10,26 @@ $(document).ready(function () {
         });
         //make it into hex
         document.getElementById('about').style.color = '#' + arr[0] + arr[1] + arr[2];
-        function startTime(duration, display) {
-                var start = date,
+    }
+
+    //update the color every 1,000 miliseconds
+    setInterval(HexTime(), 1000);
+
+    function startTime(duration, display) {
+                var start = Date.now(),
                 min,
                 diff,
-                sec,
-                mili;
+                sec;
             function timer() {
                 //find time elapsed ( | truncates to int)
                 diff = duration - (((Date.now() - start)/1000)|0);
                 min = (diff / 60) | 0;
                 sec = (diff / 60) | 0;
-                mili =(diff / 60) | 0;
 
                 min = min < 10 ? "0" + min : min;
                 sec = sec < 10 ? "0" + sec : sec;
-                mili = mili < 10 ? "0" + mili : mili;
 
-                display.textContent = min + ":" + sec + ":" + mili;
+                display.textContent = min + ":" + sec;
             }
             timer();
             setInterval(timer, 1000);
@@ -37,10 +39,6 @@ $(document).ready(function () {
             display = document.querySelector('#time');
             startTime(threedays,display);
         };
-    }
-
-    //update the color every 1,000 miliseconds
-    setInterval(HexTime(), 1000);
 
     //reset the sliders
     $('#reset').click(function () {
