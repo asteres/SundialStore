@@ -54,10 +54,7 @@ $(document).ready(function () {
     });
 
     $('#options').click(function() {
-  $('#amount-custom')[this.checked ? "show" : "hide"]();
-});
-        $('#options').click(function() {
-  $('#amount-custom')[this.checked ? "focus" : ""]();
+  $('#amount-custom')[this.checked ? "show focus" : "hide"]();
 });
 
 });
