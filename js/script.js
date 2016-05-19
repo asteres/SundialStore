@@ -58,6 +58,9 @@ $(document).ready(function () {
         $('#amount-custom').slideToggle(500);
         //.focus
     }
+    $('#options').click(function() {
+  $('#amount-custom')[this.checked ? "show" : "hide"]();
+});
 });
 
 //show/hide the sliders
