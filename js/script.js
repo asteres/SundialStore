@@ -15,8 +15,6 @@ $(document).ready(function () {
     //update the color every 1,000 miliseconds
     setInterval(HexTime(), 1000);
 
-    $('.content').hide();
-
     //reset the sliders
     $('#reset').click(function () {
         $('slider1').slider.value(33);
@@ -29,15 +27,6 @@ $(document).ready(function () {
     });
 });
 
-
-
-
-/*$(function () {
-    $('.title').click(function () {
-        $(this).toggleClass('active').next().children('.content').toggleClass('show');
-    });
-    });
-*/
 //show/hide the sliders
     $('.click').click(function () {
         $('.content').slideToggle(500);
@@ -60,7 +49,7 @@ $("#slider3").slider({
     ticks_snap_bounds: 2
 });
 
-/*
+
 var split = function () {
     var max = 100;
     $("#slider1").on("slide", function (slideEvt) {
