@@ -44,15 +44,16 @@ $(document).ready(function () {
 
     //reset the sliders
     $('.reset').click(function () {
-        $('slider1').slider.value(33);
+        $('slider1').slider.getValue(33);
 
-        $('slider2').slider.value(33);
+        $('slider2').slider.getValue(33);
 
-        $('slider3').slider.value(33);
+        $('slider3').slider.getValue(33);
         
         return false;
     });
 
+    //show textbox when other is selected and focus the textbox
     $('#options').click(function() {
   $('#amount-custom')[this.checked ? "show focus" : "hide"]();
 });
