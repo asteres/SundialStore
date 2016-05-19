@@ -29,6 +29,7 @@ $(document).ready(function () {
 
                 display.textContent = min + ":" + sec + ":" + mili;
             }
+            timer();
         }
         window.onload = function () {
             var threedays = 4320,
