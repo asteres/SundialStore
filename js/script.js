@@ -83,3 +83,40 @@ $("#slider3").slider({
     ticks_labels: ['0%', '25%', '50%', '75%', '100%'],
     ticks_snap_bounds: 2
 });
+
+$(".slide_selgere").noUiSlider({
+    start: [ 5 ],
+    step: 1,
+    format: wNumb({
+    decimals: 0
+    }),
+    range: {
+    'min': [ 1 ],
+    'max': [ 10 ]
+    }
+});
+
+$(".slide_selgere").Link('lower').to($('#selgere'));
+
+$(".slide_pakker").noUiSlider({
+start: [ 15 ],
+    step: 1,
+    format: wNumb({
+    decimals: 0
+    }),
+    range: {
+    'min': [ 1 ],
+    'max': [ 100 ]
+    }
+
+});
+
+$(".slide_pakker").Link('lower').to($('#pakker'));
+
+var sliders = $('.slider'), sum = $('#sum');
+
+sliders.Link().to(function( value ){
+    var total = Number(value) + Number(sliders.not($(this)).val());
+    sum.html(total);
+});
+
